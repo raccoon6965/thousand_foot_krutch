@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jogo da Velha</title>
+</head>
+<body>
+    <!-- Título do jogo -->
+    <h1>Jogo da Velha</h1>
+
+    <!-- Grade do jogo -->
+    <div>
+        <!-- Linha 1 -->
+        <div id="1" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="2" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="3" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+
+    <div>
+        <!-- Linha 2 -->
+        <div id="4" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="5" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="6" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+
+    <div>
+        <!-- Linha 3 -->
+        <div id="7" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="8" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+        <div id="9" class="quadrado" onclick="escolherQuadrado(this.id)">-</div>
+    </div>
+
+    <!-- Informações do jogador atual -->
+    <div class="jogador">
+      <label>
+      Jogador:
+      </label>
+      <label id="jogador-selecionado">
+
+      </label>
+    </div>
+
+    <!-- Vencedor do jogo -->
+    <div class="jogador">
+      <label>
+      Vencedor:
+      </label>
+      <label id="vencedor-selecionado">
+    
+      </label>
+    </div>
+
+    <!-- Botão de reiniciar o jogo -->
+    <div>
+      <button onclick="reiniciar()">
+          Reiniciar
+      </button>
+    </div>
+
+    <!-- Caminho de áudio para tocar durante o jogo -->
+      <audio controls autoplay>
+        <source src="audio/tension-165472.mp3" type="audio/mpeg">
+      </audio>
+
+    <!-- Inclusão do arquivo JavaScript -->
+    <script src="velha.js"></script>
+
+</body>
+</html>

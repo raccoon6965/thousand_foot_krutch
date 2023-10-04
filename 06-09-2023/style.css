@@ -1,0 +1,45 @@
+/* Centraliza o conteúdo do corpo da página */
+body {
+  text-align: center;
+}
+
+/* estilo dos quadrados do jogo */
+.quadrado {
+  text-align: center;
+  width: 50px;
+  background: rgb(0, 118, 165);
+  display: inline-block;
+  padding: 40px;
+  /* espaçamento interno para o conteúdo dentro do quadrado */
+  font-size: 60px;
+  /* tamanho da fonte (x ou O) dentro do quadrado */
+  margin: 5px;
+  /* espaçamento entre os quadrados */
+  cursor: pointer;
+  /* mostra um cursor de mão quando o mouse sobre os quadrados */
+  color: rgb(0, 118, 165);
+  /* cor do texto dentro do quadrado (cor X ou O) */
+}
+
+/* estilo do texto do jogador e vencedor */
+.jogador,
+.vencedor {
+  font-size: 30px;
+  /* tamanho da fonte para o texto do jogador e vencedor */
+  margin-top: 10px;
+  /* espaçamento superior para separar do conteúdo anterior */
+}
+
+/* Estilo do botão reiniciar */
+button {
+  margin-top: 10px;
+  /* espaçamento superior para separar do conteúdo anterior */
+  width: 10%;
+  /* largura do botão em relação ao container pai */
+  height: 30px;
+  /* altura do botão */
+  background: rgb(152, 226, 255);
+  /* cor de funo do botão */
+  cursor: pointer;
+  /* mostra um cursor de um mão quando o mouse passa sobre o botão */
+}

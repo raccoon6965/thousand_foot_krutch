@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manipulação de Atributos</title>
+    <link rel="stylesheet" href="atributo.css">
+</head>
+<body>
+    
+    <img src="img/raccoon.jpg" class="imagem"/> <br/>
+
+    <button onclick="trocarImagem('raccoon.jpg')">Guaxinim</button>
+    <button onclick="trocarImagem('lontra.jpg')">Lontra</button>
+
+
+    <br/><br /><hr/> <br /><br />
+
+    <img src="img/raccoon.jpg" class="imagem2" data-animal="Guaxinim"> <br />
+
+    <button onclick="trocarImagem2('raccoon.jpg', 'Guaxinim')">Guaxinim</button>
+    <button onclick="trocarImagem2('lontra.jpg', 'Lontra')">Lontra</button>
+
+    <button onclick="pegarAnimal()">Qual é o animal</button>
+
+
+
+    <script type="text/javascript" src="atributo.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando Eventos de Teclado</title>
+</head>
+<body>
+    
+    onKeyDown <br />
+    <input type="text" onkeydown="apertouTecla(event)" />
+    <br /><br />
+    
+    onKeyUp <br />
+    <input type="text" onkeyup="soltouTecla(event)" />
+    <br /><br />
+    
+    onKeyPress <br />
+    <input type="text" onkeypress="pressionouTecla(event)" />
+    <br /><br />
+    
+    onKeyUp (Shift+tecla) <br />
+    <input type="text" onkeyup="pressionouShift(event)" />
+    <br /><br />
+    
+    onKeyUp (Alt+A) <br />
+    <input type="text" onkeyup="apertouAltMaisA(event)" />
+    
+    onkeyUp (Ctrl+B) <br />
+    <input type="text" onkeyup="apertouCtrlMaisB(event)" />
+    
+    <script>
+
+        // onkeydown - dispara quando a tecla é pressionada
+            function apertouTecla(event) {
+                console.log("Apertou alguma tecla: " + event.keyCode);
+            }
+
+            function soltouTecla(event) {
+                console.log("Soltou alguma tecla: " + event.keyCode);
+            }
+
+            function pressionouTecla(event) {
+                console.log("Pressionou alguma tecla: " + event.keyCode);
+            }
+
+            function pressionouShift(event) {
+                console.log(event.shiftKey);
+                if (event.shiftKey == true) {
+                    console.log("Pressionou alguma tecla com o shift");
+                }
+            }
+
+            function apertouAltMais(event) {
+                if (event.altKey == true && event.keyCode == 65) {
+                    console.log("Pressionou a tecla Alt junto com a tecla A")
+                }
+            }
+
+            function apertouCtrlMaisB(event) {
+                if (event.ctrlKey == true && event.keyCode == 66) {
+                    console.log("Pressionou a tecla ctrl junto com a tecla B")
+                }
+            }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planetas</title>
+</head>
+<body>
+    <script>
+
+      const readline = require('readline');
+
+        const rl = readline.createInterface({
+            input: process.stdin,
+            output: process.stdout
+        });
+
+        // Declarações das variáveis
+        let pesoNaTerra, pesoNoPlaneta;
+        let numeroPlaneta;
+
+        // Seção de Comandos
+        rl.question("Digite o seu peso na Terra: ", function (pesoInput) {
+            pesoNaTerra = parseFloat(pesoInput);
+
+            alert("Escolha um planeta:");
+            alert("1 - Mercúrio");
+            alert("2 - Vênus");
+            alert("3 - Marte");
+            alert("4 - Júpiter");
+            alert("5 - Saturno");
+            alert("6 - Urano");
+
+            rl.question("Digite o número do planeta: ", function (planetaInput) {
+                numeroPlaneta = parseInt(planetaInput);
+
+                if (numeroPlaneta === 1) {
+                    pesoNoPlaneta = pesoNaTerra * 0.37;
+                } else if (numeroPlaneta === 2) {
+                    pesoNoPlaneta = pesoNaTerra * 0.88;
+                } else if (numeroPlaneta === 3) {
+                    pesoNoPlaneta = pesoNaTerra * 0.38;
+                } else if (numeroPlaneta === 4) {
+                    pesoNoPlaneta = pesoNaTerra * 2.64;
+                } else if (numeroPlaneta === 5) {
+                    pesoNoPlaneta = pesoNaTerra * 0.15;
+                } else if (numeroPlaneta === 6) {
+                    pesoNoPlaneta = pesoNaTerra * 1.17;
+                } else {
+                    console.log("Número de planeta inválido.");
+                }
+
+                if (numeroPlaneta >= 1 && numeroPlaneta <= 6) {
+                    console.log("Seu peso no planeta escolhido é: " + pesoNoPlaneta);
+                }
+
+                rl.close();
+            });
+        });
+
+    </script>
+</body>
+</html>

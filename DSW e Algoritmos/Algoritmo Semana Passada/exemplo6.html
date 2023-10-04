@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números em Ordem Decrescente</title>
+</head>
+<body>
+    <script>
+
+        // Função para ordenar três números em ordem decrescente
+            function ordenarDecrescente(a, b, c) {
+                if (a >= b && b >= c) {
+                    alert [a, b, c];
+                } else if (a >= c && c >= b) {
+                    alert [a, c, b];
+                } else if (b >= a && a >= c) {
+                    alert [b, a, c];
+                } else if (b >= c && c >= a) {
+                    alert [b, c, a];
+                } else if (c >= a && a >= b) {
+                    alert [c, a, b];
+                } else {
+                    alert [c, b, a];
+                }
+            }
+
+            // Função para ler três números do usuário
+            function lerTresNumeros() {
+                const numero1 = prompt('Digite o primeiro número: ');
+                const numero2 = prompt('Digite o segundo número :');
+                const numero3 = prompt('Digite o terceiro número: ');
+                alert (numero1, numero2, numero3);
+            }
+
+            // Função principal
+            function main() {
+                const [numero1, numero2, numero3] = lerTresNumeros();
+                const numerosOrdenados = ordenarDecrescente(numero1, numero2, numero3);
+
+                alert('Números em ordem decrescente: ', numerosOrdenados.join(', '));
+            }
+
+            // Chamando a função principal
+            main();
+
+    </script>
+</body>
+</html>

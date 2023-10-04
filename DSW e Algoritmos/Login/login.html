@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Página de Login</title>
+</head>
+<body>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+    </style>
+
+    <div class="container">
+        <h2>Login</h2>
+        <form id="login-form">
+            <label for="email1">Email:</label>
+            <input type="email" id="email" required>
+            <label for="password1">Senha:</label>
+            <input type="password" id="password" required>
+            <button type="submit" onclick="Login()">Login</button>
+        </form>
+        <button onclick="mostrarSenha()" id="show-password-btn">Show Password</button>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>

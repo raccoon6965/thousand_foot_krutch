@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ano Bissexto</title>
+</head>
+<body>
+    <script>
+
+        const readline = require('readline');
+
+            const rl = readline.createInterface({
+                input: process.stdin,
+                output: process.stdout
+            });
+
+            rl.question("Digite um ano (XXXX): ", function (ano) {
+                if ((ano % 4 === 0 && ano % 100 !== 0) || ano % 400 === 0) {
+                    console.log(ano + " é bissexto");
+                } else {
+                    console.log(ano + " não é bissexto");
+                }
+
+                rl.close();
+            });
+
+    </script>
+</body>
+</html>

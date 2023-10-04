@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos de Teclado</title>
+</head>
+<body>
+    onKeyDown <br/>
+    <input type="text" onkeydown="apertouTecla(event)"/>
+    <br/><br/>
+
+    onKeyUp <br/>
+    <input type="text" onkeyup="soltouTecla(event)"/>
+    <br/><br/>
+
+    onKeyPress <br />
+    <input type="text" onkeypress="pressionouTecla(event)"/>
+    <br /><br />
+
+    onKeyUp (Shift+tecla) <br />
+    <input type="text" onkeyup="pressionouShift(event)"/>
+    <br /><br />
+
+    onKeyUp (Alt+A) <br />
+    <input type="text" onkeyup="apertouAltMaisA(event)" />
+
+    onkeyUp (Ctrl+B) <br />
+    <input type="text" onkeyup="apertouCtrlMaisB(event)"/>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
